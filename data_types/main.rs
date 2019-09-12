@@ -16,6 +16,11 @@ fn main() {
 
     // remainder
     let remainder = 43 % 5;
+
+    let t = true;
+
+    let f: bool = false; // with explicit type annotation
+
     let tup = (500, 6.4, 1);
 
     let (x, y, z) = tup;
