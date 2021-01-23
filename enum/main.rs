@@ -75,6 +75,13 @@ impl Message {
     }
 }
 
+// Option
+// it's prepared standard library
+enum Option<T> {
+    Some(T),
+    None,
+}
+
 // doesn't work
 fn main() {
     let home = IpAddr::V4(127, 0, 0, 1);
@@ -82,4 +89,9 @@ fn main() {
 
     let m = Message::Write(String::from("hello"));
     m.call();
+
+    let some_number = Some(5);
+    let some_string = Some("a string");
+
+    let absent_number: Option<i32> = None;
 }
